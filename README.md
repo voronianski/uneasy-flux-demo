@@ -1,5 +1,7 @@
 # Practical Flux for uneasy APIs
 
+![](http://img.shields.io/badge/Status-In%20Progress-brightgreen.svg?style=flat)
+
 > Flux patterns for unexpected scenarios like handling API errors or dealing with pending requests.
 
 ## Disclaimer

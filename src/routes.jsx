@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, DefaultRoute, NotFoundRoute } from 'react-router';
 
-import PageContainer from './pages/PageContainer.jsx';
-import NotFoundContainer from './pages/NotFoundContainer.jsx';
-import MatchListContainer from './pages/matches/MatchListContainer.jsx';
-import MatchPreviewContainer from './pages/matches/MatchPreviewContainer.jsx';
+import PageContainer from './pages/PageContainer';
+import NotFoundContainer from './pages/NotFoundContainer';
+import MatchListContainer from './pages/matches/MatchListContainer';
+import MatchPreviewContainer from './pages/matches/MatchPreviewContainer';
 
 export default (
     <Route name="list" path="/" handler={PageContainer}>

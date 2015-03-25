@@ -20,6 +20,8 @@ After publication of [Flux Comparison](https://github.com/voronianski/flux-compa
 
 ## Principles
 
+- Usually it's better to have API separated from the client however for demonstration purposes we have it inside [`src/server`]() folder.
+
 ## Usage
 
 Clone this repo and run `npm install` inside it.

@@ -1,4 +1,7 @@
 // import config from '../../config';
+import React from 'react';
+import ReactRouter from 'react-router';
+import routes from '../../client/routes';
 import { output as devOutput } from '../../../webpack.config.development';
 import build from '../../config/webpackBuildStats';
 
@@ -12,7 +15,12 @@ if (devOutput) {
 
 function handler (mainJS) {
     return (req, res, next) => {
-        res.render('base', { mainJS });
+        ReactRouter.run(routes, req.url, (Handler) => {
+            const content = React.renderToString(
+                React.createElement(Handler, {})
+            );
+            res.render('base', { mainJS, content });
+        });
     };
 }
 

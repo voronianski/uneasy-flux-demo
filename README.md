@@ -6,7 +6,7 @@
 
 ## Disclaimer
 
-After publication of [Flux Comparison](https://github.com/voronianski/flux-comparison) repo I've received several [questions](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example#comment-1845704464) regarding pending/error-handling of API requests. This demo aims to show the practical approaches that worked for me and some of my recent applications.
+After publication of [Flux Comparison](https://github.com/voronianski/flux-comparison) repo I've received several [questions](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example#comment-1845704464) regarding pending/error-handling of API requests. This demo aims to show the practical approaches that worked for me in some of my recent applications.
 
 ## What's inside?
 

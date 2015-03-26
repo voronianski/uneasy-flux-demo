@@ -24,13 +24,14 @@ module.exports = {
     },
 
     module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loaders: ['react-hot', 'babel?experimental']
-            }
-        ]
+        loaders: [{
+            test: /\.css$/,
+            loader: 'style?singleton!css!cssnext'
+        }, {
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'react-hot!babel?experimental'
+        }]
     },
 
     plugins: [

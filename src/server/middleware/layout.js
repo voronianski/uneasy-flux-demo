@@ -1,11 +1,12 @@
-// import config from '../../config';
 import React from 'react';
 import ReactRouter from 'react-router';
 import routes from '../../client/routes';
-import { output as devOutput } from '../../../webpack.config.development';
 import build from '../../config/webpackBuildStats';
+import { output as devOutput } from '../../../webpack.config.development';
 
-let devMainJS, prodMainJs;
+let devMainJS;
+let prodMainJs;
+
 if (build) {
     prodMainJs = `/build/${build.assetsByChunkName.main}?${build.hash}`;
 }

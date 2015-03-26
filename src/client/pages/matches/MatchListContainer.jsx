@@ -1,3 +1,5 @@
+import './matches.css';
+
 import React from 'react';
 
 class MatchListContainer extends React.Component {

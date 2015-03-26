@@ -27,9 +27,14 @@ app.use(logger('tiny'));
 app.use(favicon(path.join(publicFolder, 'assets/react.png')));
 app.use(express.static(publicFolder));
 app.use(cors());
+
+// add server-side routes
 app.use(routes);
+
+// api is inside the app
 app.use('/api', fizzleAPI);
 
+// render the base html
 if ('production' === env) {
     app.use(layout.production());
 } else {

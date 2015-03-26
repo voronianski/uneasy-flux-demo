@@ -1,3 +1,4 @@
+import './preview.css';
 import React from 'react';
 
 export default class MatchPreviewContainer extends React.Component {
